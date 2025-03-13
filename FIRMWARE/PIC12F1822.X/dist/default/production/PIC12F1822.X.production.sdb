@@ -1,0 +1,176 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 12F1822 ]
+[d frameptr 6 ]
+"10 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"73 C:\Users\Lucas\Desktop\PROJETO LED GAUGE\FIRMWARE\PIC12F1822.X\main.c
+[v _max7219_write max7219_write `(v  1 e 1 0 ]
+"87
+[v _main main `(v  1 e 1 0 ]
+"183
+[v _ISR ISR `II(v  1 e 1 0 ]
+[s S135 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"375 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\proc\pic12f1822.h
+[s S144 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S149 . 1 `S135 1 . 1 0 `S144 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES149  1 e 1 @11 ]
+[s S167 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"737
+[u S176 . 1 `S167 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES176  1 e 1 @17 ]
+"1243
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+[s S188 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+"1310
+[u S197 . 1 `S188 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES197  1 e 1 @145 ]
+[s S68 . 1 `uc 1 SCS0 1 0 :1:0 
+`uc 1 SCS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 IRCF0 1 0 :1:3 
+`uc 1 IRCF1 1 0 :1:4 
+`uc 1 IRCF2 1 0 :1:5 
+`uc 1 IRCF3 1 0 :1:6 
+`uc 1 SPLLEN 1 0 :1:7 
+]
+"1668
+[s S77 . 1 `uc 1 SCS 1 0 :2:0 
+`uc 1 . 1 0 :1:2 
+`uc 1 IRCF 1 0 :4:3 
+]
+[u S81 . 1 `S68 1 . 1 0 `S77 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES81  1 e 1 @153 ]
+[s S98 . 1 `uc 1 HFIOFS 1 0 :1:0 
+`uc 1 LFIOFR 1 0 :1:1 
+`uc 1 MFIOFR 1 0 :1:2 
+`uc 1 HFIOFL 1 0 :1:3 
+`uc 1 HFIOFR 1 0 :1:4 
+`uc 1 OSTS 1 0 :1:5 
+`uc 1 PLLR 1 0 :1:6 
+`uc 1 T1OSCR 1 0 :1:7 
+]
+"1735
+[u S107 . 1 `S98 1 . 1 0 ]
+[v _OSCSTATbits OSCSTATbits `VES107  1 e 1 @154 ]
+[s S25 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+]
+"1997
+[u S32 . 1 `S25 1 . 1 0 ]
+[v _LATAbits LATAbits `VES32  1 e 1 @268 ]
+"2491
+[v _APFCON APFCON `VEuc  1 e 1 @285 ]
+"2633
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2874
+[v _RCREG RCREG `VEuc  1 e 1 @409 ]
+"2930
+[v _SPBRGL SPBRGL `VEuc  1 e 1 @411 ]
+"2980
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @412 ]
+"3013
+[v _RCSTA RCSTA `VEuc  1 e 1 @413 ]
+"3075
+[v _TXSTA TXSTA `VEuc  1 e 1 @414 ]
+"3137
+[v _BAUDCON BAUDCON `VEuc  1 e 1 @415 ]
+"3252
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @529 ]
+"3366
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @532 ]
+[s S47 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"3438
+[u S56 . 1 `S47 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES56  1 e 1 @532 ]
+"3483
+[v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @533 ]
+"5767
+[v _RCIE RCIE `VEb  1 e 0 @1165 ]
+"5770
+[v _RCIF RCIF `VEb  1 e 0 @141 ]
+[s S22 Buffer_s 7 `[6]uc 1 data 6 0 `uc 1 index 1 6 ]
+"41 C:\Users\Lucas\Desktop\PROJETO LED GAUGE\FIRMWARE\PIC12F1822.X\main.c
+[v _Buffer Buffer `VES22  1 e 7 0 ]
+"54
+[v _initSequence initSequence `DC[13][2]uc  1 e 26 0 ]
+"87
+[v _main main `(v  1 e 1 0 ]
+{
+"156
+[v main@j j `uc  1 a 1 4 ]
+"154
+[v main@tempData tempData `uc  1 a 1 1 ]
+"153
+[v main@i_278 i `uc  1 a 1 3 ]
+"147
+[v main@currentLedIndex currentLedIndex `uc  1 a 1 0 ]
+"119
+[v main@i_252 i `uc  1 a 1 2 ]
+"112
+[v main@i i `uc  1 a 1 5 ]
+"178
+} 0
+"73
+[v _max7219_write max7219_write `(v  1 e 1 0 ]
+{
+[v max7219_write@address address `uc  1 a 1 wreg ]
+[v max7219_write@address address `uc  1 a 1 wreg ]
+[v max7219_write@data data `uc  1 p 1 2 ]
+[v max7219_write@address address `uc  1 a 1 3 ]
+"78
+} 0
+"183
+[v _ISR ISR `II(v  1 e 1 0 ]
+{
+"186
+[v ISR@data data `uc  1 a 1 1 ]
+"195
+} 0
