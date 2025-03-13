@@ -4,6 +4,8 @@
 #### Placa
 ![Placa da Placa](https://github.com/lucas458/TACOMETRO_USB/blob/main/IMAGENS/pcb.png?raw=true "Frente da placa")
 
+
+### Dados para ser enviados, são enviados 6 bytes pela porta serial.
 | Buffer Index | Valor (decimal) | Descrição |
 | ------------ | --------------- | --------- |
 | 0 | 0 a 255 | Digito 0 |
@@ -11,4 +13,4 @@
 | 2 | 0 a 255 | Digito 2 |
 | 3 | 0 a 20 | Quantidade de LEDS ligados |
 | 4 | 0 a 15 | Brilho |
-| 0 | '\r' ou '\n' | **Caractere obrigatório** |
+| 5 | '\r' ou '\n' | **Caractere obrigatório** |
